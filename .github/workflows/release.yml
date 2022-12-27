@@ -50,6 +50,9 @@ jobs:
 
       - if: ${{ endsWith(matrix.target.tool, 'musl') }}
         run: sudo apt update && sudo apt install -y musl-tools musl-dev
+        
+      - name: install OpenSSL
+        run: sudo apt update && sudo apt install -y openssl
 
       - name: Install rust toolchain
         run: |
