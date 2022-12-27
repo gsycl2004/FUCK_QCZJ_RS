@@ -45,15 +45,15 @@ jobs:
         if: env.windows != 'true'
         uses: actions/upload-artifact@v3
         with:
-          name: atri_bot-${{ matrix.target.tool }}
+          name: FUCK_QCZJ-${{ matrix.target.tool }}
           path: target/${{ matrix.target.tool }}/debug/FUCK_QCZJ
 
       - name: Upload exe
         if: env.windows == 'true'
         uses: actions/upload-artifact@v3
         with:
-          name: atri_bot-${{ matrix.target.tool }}.exe
-          path: target/${{ matrix.target.tool }}/debug/FUCK_QCZJ
+          name: FUCK_QCZJ-${{ matrix.target.tool }}.exe
+          path: target/${{ matrix.target.tool }}/debug/FUCK_QCZJ.exe
 
 
   build:
