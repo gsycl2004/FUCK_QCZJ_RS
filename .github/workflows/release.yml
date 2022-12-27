@@ -52,7 +52,8 @@ jobs:
         run: sudo apt update && sudo apt install -y musl-tools musl-dev
         
       - name: install OpenSSL
-        run: sudo apt update && sudo apt install -y openssl
+        if: env.windows != 'true'
+        run: sudo apt update && sudo apt install -y  libssl-dev
 
       - name: Install rust toolchain
         run: |
