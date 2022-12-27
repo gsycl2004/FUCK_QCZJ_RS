@@ -53,7 +53,7 @@ jobs:
         
       - name: install OpenSSL
         if: env.windows != 'true'
-        run: sudo apt update && sudo apt install -y pkg-config && sudo apt-get install libudev-dev && sudo apt install -y  libssl-dev
+        run: sudo apt update && sudo apt install -y pkg-config && sudo apt-get install -y libudev-dev && sudo apt install -y  libssl-dev
 
       - name: Install rust toolchain
         run: |
