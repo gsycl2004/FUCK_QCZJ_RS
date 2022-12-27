@@ -61,7 +61,6 @@ jobs:
         with:
           command: build
           args: --release --target ${{ matrix.target.tool }}
-          use-cross: true
 
       - name: Upload
         if: env.windows != 'true'
