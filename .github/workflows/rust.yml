@@ -38,9 +38,6 @@ jobs:
       - name: Cache
         uses: Swatinem/rust-cache@v2
 
-      - name: Test
-        run: cargo test --target ${{ matrix.target.tool }}
-
       - name: Build
         run: cargo build --target ${{ matrix.target.tool }}
 
