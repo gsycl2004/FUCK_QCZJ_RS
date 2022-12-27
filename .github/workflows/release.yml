@@ -68,16 +68,16 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: target/${{ matrix.target.tool }}/release/atri_bot
-          asset_name: atri_bot-${{ matrix.target.tool }}
+          file: target/${{ matrix.target.tool }}/release/FUCK_QCZJ
+          asset_name: FUCK_QCZJ-${{ matrix.target.tool }}
 
       - name: Upload exe
         if: env.windows == 'true'
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: target/${{ matrix.target.tool }}/release/atri_bot.exe
-          asset_name: atri_bot-${{ matrix.target.tool }}.exe
+          file: target/${{ matrix.target.tool }}/release/FUCK_QCZJ.exe
+          asset_name: FUCK_QCZJ-${{ matrix.target.tool }}.exe
 
   release-android:
     strategy:
